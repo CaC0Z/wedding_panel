@@ -128,12 +128,16 @@ function createUserItem(user) {
 
   const confirmStatus = document.createElement("span");
   confirmStatus.classList.add("status");
-  if(user.invitation.confirm){
+  confirmStatus.textContent = "PENDIENTE";
+
+  if(user.invitation.confirm == true){
     confirmStatus.textContent = "SI ASITIRÁ";
-    confirmStatus.classList.add("ok")
-  }else{
+    confirmStatus.classList.add("asist")
+    confirmStatus.classList.remove("notasist")
+  }else if(user.invitation.confirm == false){
     confirmStatus.textContent = "NO ASISTIRÁ";
-    confirmStatus.classList.remove("ok")
+    confirmStatus.classList.remove("asist");
+    confirmStatus.classList.add("notasist");
   }
 
 

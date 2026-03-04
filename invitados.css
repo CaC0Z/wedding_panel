@@ -90,13 +90,17 @@ button {
   font-size: 0.8em;
   color: white;
   padding: 0.5em;
-  background-color: red;
+  background-color: #fcba03;
   border-radius: 5px;
   width: 120px;
 }
 
-.status.ok{
+.status.asist{
     background-color: green;
+}
+
+.status.notasist{
+    background-color: red;
 }
 
 /*#users-list-header{*/
