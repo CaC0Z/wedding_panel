@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitados</title>
+    <link rel="stylesheet" href="invitados.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header-row">
+        <h1>Lista de invitados</h1>
+        <div id="search">
+            <span>Asistentes</span>
+            <input id="asistentes-checkbox" type="checkbox">
+            <span>Buscar</span>
+            <input id="search-input" type="text">
+        </div>
+        <button id="new-user-btn" type="button">Nuevo</button>
+      </header>
+
+      <p id="status" role="status" aria-live="polite"></p>
+
+      <ul id="users-list" class="users-list"></ul>
+    </main>
+
+    <dialog id="info-dialog">
+      <article>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-content"></p>
+        <button id="dialog-close-btn" type="button">Cerrar</button>
+      </article>
+    </dialog>
+
+    <script src="invitados.js"></script>
+  </body>
+</html>
+
